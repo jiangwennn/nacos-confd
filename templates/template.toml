@@ -1,0 +1,6 @@
+[template]
+src="constants.template"
+dest="/tmp/acm/constants.php"
+keys=[
+    "__DataId__"
+]

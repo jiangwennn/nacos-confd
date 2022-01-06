@@ -1,0 +1,18 @@
+version: "3"
+services: 
+  nacos-confd:
+    build: .
+    image: nacos-confd:nacosv2
+    environment:
+      # 监听
+      - watch=-watch
+      - scheme=http
+      # 未开启监听时，拉取的间隔，单位秒
+      # - interval=5
+      - host=
+      - port=8848
+      - uri=/nacos
+      - group=DEFAULT_GROUP
+      - namespace=e1d4a1d2-2457-451a-ae13-313e4eb94af8
+      - dataId=/test/dataId
+      - loglevel=info

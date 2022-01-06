@@ -73,6 +73,12 @@ func init() {
 	flag.StringVar(&config.Username, "username", "", "the username to authenticate as (only used with vault and etcd backends)")
 	flag.StringVar(&config.Password, "password", "", "the password to authenticate with (only used with vault and etcd backends)")
 	flag.BoolVar(&config.Watch, "watch", false, "enable watch support")
+	//nacos v2
+	flag.StringVar(&config.Host, "host", "", "the host in nacos (only used with nacosv2 backends)")
+	flag.Uint64Var(&config.Port, "port", 8848, "the port in nacos (only used with nacosv2 backends)")
+	flag.StringVar(&config.Uri, "uri", "/nacos", "the uri in nacos (only used with nacosv2 backends)")
+	flag.StringVar(&config.Group, "group", "DEFAULT_GROUP", "the group in nacos (only used with nacosv2 backends)")
+	flag.StringVar(&config.Namespace, "namespace", "", "the namespace in nacos (only used with nacosv2 backends)")
 }
 
 // initConfig initializes the confd configuration by first setting defaults,

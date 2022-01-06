@@ -27,4 +27,11 @@ type Config struct {
 	Filter       string     `toml:"filter"`
 	Path         string     `toml:"path"`
 	Role         string
+	// nacos v2  + Scheme
+	Namespace    string 	`toml:"namespace"`
+	Group		 string 	`toml:"group"`
+	Host	 	 string 	`toml:"host"`
+	Port	 	 uint64 	`toml:"port"`
+	Uri  		 string 	`toml:"uri"`
+	LogLevel 	 string 	`toml:"log-level"`
 }
