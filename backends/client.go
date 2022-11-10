@@ -94,8 +94,6 @@ func New(config Config) (StoreClient, error) {
 			NotLoadCacheAtStart: true,
 			LogDir:              "/tmp/nacos/log",
 			CacheDir:            "/tmp/nacos/cache",
-			RotateTime:          "1h",
-			MaxAge:              3,
 			LogLevel:            config.LogLevel,
 		}
 		sConfig:= constant.ServerConfig{
