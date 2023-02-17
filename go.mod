@@ -11,7 +11,7 @@ require (
 	github.com/hashicorp/consul v1.0.7
 	github.com/hashicorp/vault v0.10.1
 	github.com/kelseyhightower/memkv v0.1.1
-	github.com/nacos-group/nacos-sdk-go/v2 v2.1.0
+	github.com/nacos-group/nacos-sdk-go/v2 v2.1.1
 	github.com/samuel/go-zookeeper v0.0.0-20180130194729-c4fab1ac1bec
 	github.com/sirupsen/logrus v1.8.1
 	github.com/xordataexchange/crypt v0.0.3-0.20170626215501-b2862e3d0a77
